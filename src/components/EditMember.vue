@@ -1,10 +1,10 @@
 <template>
 <center>
     <div id='data-update-box'>
-        <div id='data-update-title'>Change role for {{this.$route.params.email}}</div><br><br><br>
+        <div id='data-update-title'>Change role for {{this.$route.params.email}}</div><br>
         <div id='page-desc'>You can either let your team members access everything in this site
             or assign specific role to them
-        </div><br><br>
+        </div><br><br><br>
         <div id='update-form-div'>
             <form>
                 <label>
@@ -33,7 +33,7 @@
                 </label>
                 <br><br>
                 <input type='submit' class='submit-button'
-                value='Update' @click.prevent='inputHandler'/>
+                value='Update' @click.prevent='inputHandler'/> <br>
             </form>
         </div>
     </div>
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
@@ -61,31 +62,43 @@ import { Component, Vue } from 'vue-property-decorator';
     },
   },
 })
+
 export default class EditMemberPage extends Vue {}
 </script>
 
 <style>
 #data-update-box{
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  width:1200px;
-  padding:50px;
- }
- #data-update-title{
-  float: left;
-  margin-left:70px;
-  margin-top:30px;
-  font-weight:bold;
-  font-size:30px;
-  display:block;
- }
- #page-desc{
- float:left;
- margin-left:70px;
- }
- .submit-button{
-  box-shadow: 0px 0px 0px transparent;
+width:100vw;
+background-color: #f6f0c4;
+background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 74%);
+padding:20px;
+border-radius:20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#data-update-title{
+float: left;
+margin-left:70px;
+font-weight:bold;
+font-size:30px;
+display:block;
+}
+
+#page-desc{
+float:left;
+font-weight:bold;
+font-size: 20px;
+margin-left:70px;
+}
+
+#update-form-div{
+background-color: #f8f9d2;
+background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+padding:20px;
+border-radius:20px;
+}
+.submit-button{
+box-shadow: 0px 0px 0px transparent;
 border: 0px solid transparent;
 text-shadow: 0px 0px 0px transparent;
 text-decoration:none;
@@ -94,13 +107,14 @@ color:black;
 border-radius:5px;
 width:120px;
 height:20px;
- }
- input{float:left;}
- .check-names{
- font-weight:bold;
- }
- .role-desc{
-     float:left;
-     margin-left:70px;
- }
+}
+input{float:left;}
+
+.check-names{
+font-weight:bold;
+}
+.role-desc{
+  float:left;
+  margin-left:70px;
+}
 </style>

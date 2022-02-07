@@ -11,8 +11,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    members: [{ role: 'Admin', email: 'debajyoti.debbarma@chargebee.com' },
-      { role: 'Admin', email: 'debajyoti.debbarma2@chargebee.com' }],
+    members: [{ role: 'Admin', email: 'srijantripathi09@gmail.com' },
+      { role: 'Admin', email: 'srijan.tripathi@chargebee.com' }],
   },
   mutations: {
     add(state, memberData) {

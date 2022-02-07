@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link style="text-decoration: none; color:#659DBD;
-      font-size:50px; font-weight:bold" to="/">Home</router-link>
+      <h1 style="text-decoration: none; color:#659DBD;
+      font-size:50px; font-weight:bold">Vue Hands-On</h1>
     </div>
     <router-view/>
   </div>
