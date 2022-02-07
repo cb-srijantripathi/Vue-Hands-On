@@ -1,4 +1,4 @@
-import HelloWorld from '../HelloWorld.vue';
+import HelloWorld from '../HomePage.vue';
 import { render } from '@testing-library/vue';
 
 describe('Hello World', () => {
